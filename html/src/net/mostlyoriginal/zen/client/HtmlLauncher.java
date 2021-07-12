@@ -3,16 +3,15 @@ package net.mostlyoriginal.zen.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
+import net.mostlyoriginal.zen.Assets;
 import net.mostlyoriginal.zen.ZenGame;
 
 public class HtmlLauncher extends GwtApplication {
 
         @Override
         public GwtApplicationConfiguration getConfig () {
-                // Resizable application, uses available space in browser
-                return new GwtApplicationConfiguration(true);
-                // Fixed size application:
-                //return new GwtApplicationConfiguration(480, 320);
+                GwtApplicationConfiguration config = new GwtApplicationConfiguration(160 * Assets.PIXEL_SCALE, 120 * Assets.PIXEL_SCALE);
+                return config;
         }
 
         @Override

@@ -2,7 +2,7 @@ package net.mostlyoriginal.zen.actors;
 
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import net.mostlyoriginal.zen.NotImplementedException;
 
 /**
  * @author Daan van Yperen

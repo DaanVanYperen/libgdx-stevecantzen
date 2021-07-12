@@ -128,11 +128,11 @@ public class Assets {
         preybirdGibs = regionToSingleFrameAnimation(createRegionsFromGrid(14, 4, 2, 2, 3));
 
         // brain slowly slipping.
-        damageDealt = Gdx.audio.newSound(Gdx.files.local("sound/hit-punch.wav"));
-        birdTweet = Gdx.audio.newSound(Gdx.files.local("sound/bird-tweet.wav"));
-        steveKicks = Gdx.audio.newSound(Gdx.files.local("sound/steve-kicks.wav"));
-        steveZenPowerup = Gdx.audio.newSound(Gdx.files.local("sound/steve-zen-powerup.wav"));
-        deerOhLaLa = Gdx.audio.newSound(Gdx.files.local("sound/deer-oh-la-la.wav"));
+        damageDealt = Gdx.audio.newSound(Gdx.files.internal("sound/hit-punch.wav"));
+        birdTweet = Gdx.audio.newSound(Gdx.files.internal("sound/bird-tweet.wav"));
+        steveKicks = Gdx.audio.newSound(Gdx.files.internal("sound/steve-kicks.wav"));
+        steveZenPowerup = Gdx.audio.newSound(Gdx.files.internal("sound/steve-zen-powerup.wav"));
+        deerOhLaLa = Gdx.audio.newSound(Gdx.files.internal("sound/deer-oh-la-la.wav"));
     }
 
     private static Animation<TextureRegion>[] regionToSingleFrameAnimation(TextureRegion[][] regions) {
